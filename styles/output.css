@@ -905,6 +905,10 @@ video {
   height: 100%;
 }
 
+.h-80 {
+  height: 20rem;
+}
+
 .max-h-\[90\%\] {
   max-height: 90%;
 }
@@ -1933,6 +1937,11 @@ video {
 
 .border-none {
   border-style: none;
+}
+
+.border-green-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(74 222 128 / var(--tw-border-opacity));
 }
 
 .border-red-500 {
