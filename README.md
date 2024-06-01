@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-     <a href="https://portfolio-cyan-ten-54.vercel.app">Visite este projeto</a>
+     <a href="https://produtosdunego.vercel.app">Visite este projeto</a>
 </p>
 
 ## Imagens da página:
