@@ -203,11 +203,13 @@ checkoutBtn.addEventListener("click", function () {
     .join("");
 
   const message = encodeURIComponent(cartItems);
-  const phone = "5527995167790";
+  const phone = "5527998713286";
   console.log(message);
 
   window.open(
-    `https://wa.me/${phone}?text=Olá, me chamo ${nameInput.value} e gostaria de fazer o pedido: %0A${message}%0ATotal: ${cartTotal.textContent.replace(
+    `https://wa.me/${phone}?text=Olá, me chamo ${
+      nameInput.value
+    } e gostaria de fazer o pedido: %0A${message}%0ATotal: ${cartTotal.textContent.replace(
       ".",
       ","
     )}%0AEndereço: ${addressInput.value}`,
