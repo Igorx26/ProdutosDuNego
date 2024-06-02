@@ -10,12 +10,12 @@ module.exports = {
         home: "url('/assets/bg.png')",
       },
       animation: {
-        "fade-in": "fadeIn 5s ease-in-out",
+        fadeIn: "fadeIn 0.5s ease-in-out",
       },
       keyframes: {
         fadeIn: {
-          'from': { opacity: 0 },
-          'to': { opacity: 1 },
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
         },
       },
     },

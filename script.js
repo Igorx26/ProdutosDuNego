@@ -225,7 +225,7 @@ function checkRestaurantOpen() {
   const data = new Date();
   const hour = data.getHours();
   const dayOfWeek = data.getDay();
-  return hour >= 9 && hour <= 22;  
+  return hour >= 9 && hour <= 22;
 }
 //  && dayOfWeek !== 0
 
