@@ -1,7 +1,11 @@
 <h1 align="center" style="font-weight: bold;">Produtos Du Nego </h1>
 
 <p align="center">
-    <b>Site cardápio com envio do pedido por mensagem via WhatsApp</b><br>
+    <b>Site cardápio com envio do pedido por mensagem via WhatsApp</b><br><br>
+    <b>Possui controle dos dias da semana e horário de funcionamento, quando fora dos dias e dos horários estipulados o cliente não consegue enviar um pedido</b>
+
+##
+<br>
 
 <div align="center">
    Feito utilizando:  <img align="center" alt="JS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
