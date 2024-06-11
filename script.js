@@ -224,8 +224,8 @@ checkoutBtn.addEventListener("click", function () {
 function checkRestaurantOpen() {
   const data = new Date();
   const hour = data.getHours();
-  const dayOfWeek = data.getDay();
-  return hour >= 9 && hour <= 22;
+  // const dayOfWeek = data.getDay();
+  return hour >= 8 && hour <= 22;
 }
 //  && dayOfWeek !== 0
 
