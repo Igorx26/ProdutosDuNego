@@ -77,21 +77,14 @@ function updateCartModal() {
 
   cart.forEach((item) => {
     const cartItemElement = document.createElement("div");
-    cartItemElement.classList.add(
-      "flex",
-      "justify-between",
-      "mb-4",
-      "flex-col"
-    );
+    cartItemElement.classList.add("flex", "justify-between", "mb-4", "flex-col");
 
     cartItemElement.innerHTML = `
         <div class="flex items-center justify-between border-b pb-2 mb-2">
             <div>
                 <p class="font-bold">${item.name}</p>
                 <p>Quantidade: ${item.quantity}</p>
-                <p class="font-medium my-2">R$ ${item.price
-                  .toFixed(2)
-                  .replace(".", ",")}</p>
+                <p class="font-medium my-2">R$ ${item.price.toFixed(2).replace(".", ",")}</p>
             </div>
             <button class="remove-from-cart-btn" data-name="${item.name}">
                 Remover
@@ -196,9 +189,7 @@ checkoutBtn.addEventListener("click", function () {
   //Enviar o pedido para a api do whatsApp
   const cartItems = cart
     .map((item) => {
-      return `${item.name} - Quantidade: ${
-        item.quantity
-      } - Preço: R$ ${item.price.toFixed(2).replace(".", ",")}\n`;
+      return `${item.name} - Quantidade: ${item.quantity} - Preço: R$ ${item.price.toFixed(2).replace(".", ",")}\n`;
     })
     .join("");
 
@@ -209,10 +200,9 @@ checkoutBtn.addEventListener("click", function () {
   window.open(
     `https://wa.me/${phone}?text=Olá, me chamo ${
       nameInput.value
-    } e gostaria de fazer o pedido: %0A${message}%0ATotal: ${cartTotal.textContent.replace(
-      ".",
-      ","
-    )}%0AEndereço: ${addressInput.value}`,
+    } e gostaria de fazer o pedido: %0A${message}%0ATotal: ${cartTotal.textContent.replace(".", ",")}%0AEndereço: ${
+      addressInput.value
+    }`,
     "_blank"
   );
 
@@ -239,3 +229,35 @@ if (isOpen) {
   spanItem.classList.remove("bg-green-600");
   spanItem.classList.add("bg-red-500");
 }
+
+// Destaque nav onscroll
+
+let sections = document.querySelectorAll("section");
+let navLinks = document.querySelectorAll("header nav a");
+
+window.onscroll = () => {
+  sections.forEach((sec) => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop - 150;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute("id");
+
+    if (top >= offset && top < offset + height) {
+      navLinks.forEach((links) => {
+        links.classList.remove("destaque");
+        document.querySelector("header nav a[href*=" + id + "]").classList.add("destaque");
+      });
+    }
+  });
+  menuIcon.classList.remove("bx-x");
+  navbar.classList.remove("active");
+};
+
+// toggle icon navbar
+let menuIcon = document.querySelector("#menu-icon");
+let navbar = document.querySelector(".navbar");
+
+menuIcon.onclick = () => {
+  menuIcon.classList.toggle("bx-x");
+  navbar.classList.toggle("active");
+};

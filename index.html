@@ -3,24 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon" />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
-    />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
 
     <link
       rel="stylesheet"
@@ -32,18 +22,9 @@
 
     <!-- Meta Tag OG -->
     <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Produtos Du Nego - Produtos de qualidade!"
-    />
-    <meta
-      property="og:image"
-      content="https://produtosdunego.vercel.app/assets/Logo%20Produtos%20du%20Nego.png"
-    />
-    <meta
-      property="og:description"
-      content="Os melhores produtos da roça da região."
-    />
+    <meta property="og:title" content="Produtos Du Nego - Produtos de qualidade!" />
+    <meta property="og:image" content="https://produtosdunego.vercel.app/assets/Logo%20Produtos%20du%20Nego.png" />
+    <meta property="og:description" content="Os melhores produtos da roça da região." />
     <meta property="og:site_name" content="Produtos Du Nego" />
 
     <link rel="stylesheet" href="./styles/output.css" />
@@ -52,576 +33,448 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="w-full h-[450px] bg-zinc-900 bg-home bg-cover bg-center">
-      <div class="w-full h-full flex flex-col justify-center items-center">
-        <img
-          src="./assets/Logo Produtos du Nego.png"
-          alt="Logo Produtos Du Nego"
-          class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
-        />
-        <h1 class="text-4xl mt-4 mb-2 font-bold text-white">
-          Produtos Du Nego
-        </h1>
+    <section class="home" id="home">
+      <header class="w-full h-[500px] bg-zinc-900 bg-home bg-cover bg-center" id="home">
+        <div
+          class="z-40 flex items-center h-10 bg-[#f0f3fd] border-b border-zinc-300 fixed w-full font-bold text-xl top-0 justify-around"
+        >
+          <div id="menu-icon-text">Produtos Du Nego</div>
+          <i class="font-bold text-2xl bx bx-menu" id="menu-icon"></i>
 
-        <span class="text-white font-medium mb-2 mx-4"
-          >Rua Pedro Álvares Cabral, nº 64, Bairro de Fátima, Serra - ES</span
-        >
-        <span class="text-white font-medium mx-4"
-          >Entrega grátis em Bairro de Fátima e região.</span
-        >
-        <span class="text-white font-medium mx-4"
-          >Entre em contato para mais informações:</span
-        >
-        <div class="flex justify-center items-center gap-2 mx-4">
-          <i
-            class="bx bxl-whatsapp text-white text-2xl font-medium items-center"
-          ></i>
-          <span class="text-white font-medium items-center"
-            >(27) 99871-3286</span
-          >
-        </div>
-        <div class="flex justify-center items-center gap-2 mx-4">
-          <i
-            class="bx bxl-instagram text-white text-2xl font-medium items-center"
-          ></i>
-          <span class="text-white font-medium items-center"
-            >@produtosdunego</span
-          >
+          <nav class="flex text-[1.1rem] font-bold gap-6 navbar">
+            <a
+              class="hover:text-red-600 hover:scale-105 focus active:text-red-600 active:scale-105 duration-500"
+              href="#home"
+              >Início</a
+            >
+            <a
+              class="hover:text-red-600 hover:scale-105 focus active:text-red-600 active:scale-105 duration-500"
+              href="#queijos"
+              >Queijos e Derivados</a
+            >
+            <a
+              class="hover:text-red-600 hover:scale-105 active:text-red-600 active:scale-105 duration-500"
+              href="#linguicas"
+              >Linguiças</a
+            >
+            <a
+              class="hover:text-red-600 hover:scale-105 active:text-red-600 active:scale-105 duration-500"
+              href="#massas"
+              >Massas</a
+            >
+            <a
+              class="hover:text-red-600 hover:scale-105 active:text-red-600 active:scale-105 duration-500"
+              href="#outros"
+              >Outros</a
+            >
+            <a
+              class="hover:text-red-600 hover:scale-105 active:text-red-600 active:scale-105 duration-500"
+              href="#bebidas"
+              >Bebidas</a
+            >
+          </nav>
         </div>
 
-        <div class="bg-green-600 px-4 py-1 rounded-lg mt-3" id="date-span">
-          <span class="text-white font-medium mx-4"
-            >Seg à Dom - 08:00 às 22:00</span
+        <div class="w-full h-full flex flex-col justify-center items-center mt-10">
+          <img
+            src="./assets/Logo Produtos du Nego.png"
+            alt="Logo Produtos Du Nego"
+            class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+          />
+          <h1 class="text-4xl mt-4 mb-2 font-bold text-[#f0f3fd]">Produtos Du Nego</h1>
+
+          <span class="text-[#f0f3fd] font-medium mb-2 mx-4"
+            >Rua Pedro Álvares Cabral, nº 64, Bairro de Fátima, Serra - ES</span
           >
+          <span class="text-[#f0f3fd] font-medium mx-4">Entrega grátis em Bairro de Fátima e região.</span>
+          <span class="text-[#f0f3fd] font-medium mx-4">Entre em contato para mais informações:</span>
+          <div class="flex justify-center items-center gap-2 mx-4">
+            <i class="bx bxl-whatsapp text-[#f0f3fd] text-2xl font-medium items-center"></i>
+            <span class="text-[#f0f3fd] font-medium items-center">(27) 99871-3286</span>
+          </div>
+          <div class="flex justify-center items-center gap-2 mx-4">
+            <i class="bx bxl-instagram text-[#f0f3fd] text-2xl font-medium items-center"></i>
+            <span class="text-[#f0f3fd] font-medium items-center">@produtosdunego</span>
+          </div>
+
+          <div class="bg-green-600 px-4 py-1 rounded-lg mt-3" id="date-span">
+            <span class="text-[#f0f3fd] font-medium mx-4">Seg à Dom - 08:00 às 22:00</span>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </section>
     <!-- Fim Header -->
 
-    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-10">
-      Conheça nossos produtos
-    </h2>
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-10">Conheça nossos produtos</h2>
 
     <!-- Menu -->
     <div id="menu" class="pb-16">
       <!-- Seção Queijos e Derivados -->
-      <div class="mx-auto max-w-7xl px-2 my-2">
-        <h2
-          class="font-bold text-3xl mb-8 flex justify-center border-t-4 pt-10"
-        >
-          Queijos e Derivados
-        </h2>
-      </div>
-      <main
-        class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16"
-      >
-        <!-- Produto Item -->
-        <div class="flex gap-2">
-          <img
-            src="./assets/default.png"
-            alt="Capelete de Frango"
-            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-          />
-          <div class="w-full pr-4">
-            <p class="font-bold">Queijos Minas</p>
-            <p class="text-sm pt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
-              quasi corrupti? Eligendi consequuntur quasi cupiditate?
-            </p>
-            <div class="flex items-center gap-2 justify-between mt-3">
-              <p class="font-bold text-lg">R$ $$,$$</p>
-              <button
-                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="Capelete de Frango"
-                data-price="99"
-              >
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-              </button>
+      <section class="queijos" id="queijos">
+        <div class="mx-auto max-w-7xl px-2 my-2">
+          <h2 class="font-bold text-3xl mb-10 flex justify-center border-t-4 pt-10">Queijos e Derivados</h2>
+        </div>
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+          <!-- Produto Item -->
+          <div class="flex gap-2">
+            <img
+              src="./assets/queijoMinasMeiaCura.jpg"
+              alt="Queijo Minas Meia Cura - 1kg"
+              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
+            />
+            <div class="w-full pr-4 relative">
+              <p class="font-bold">Queijo Minas Meia Cura - 1kg</p>
+              <p class="text-sm pt-2 mb-10">Temos peças de 800g a 1,1kg, porcionamos meia peça.</p>
+              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
+                <p class="font-bold text-lg">R$ 56,00</p>
+                <button
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                  data-name="Queijo Minas Meia Cura - 1kg"
+                  data-price="56"
+                >
+                  <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Fim Produto Item -->
+          <!-- Fim Produto Item -->
 
-        <!-- Produto Item -->
-        <div class="flex gap-2">
-          <img
-            src="./assets/default.png"
-            alt="Nhoque de Batata"
-            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-          />
-          <div class="w-full pr-4">
-            <p class="font-bold">Queijo cabacinha</p>
-            <p class="text-sm pt-2">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni
-              iure cum quod, amet eos quisquam!
-            </p>
-            <div class="flex items-center gap-2 justify-between mt-3">
-              <p class="font-bold text-lg">R$ $$,$$</p>
-              <button
-                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="Nhoque de Batata"
-                data-price="99"
-              >
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-              </button>
+          <!-- Produto Item -->
+          <div class="flex gap-2">
+            <img
+              src="./assets/queijoParmesao.png"
+              alt="Queijo Parmesão"
+              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
+            />
+            <div class="w-full pr-4 relative">
+              <p class="font-bold">Queijo Parmesão - 1kg</p>
+              <p class="text-sm pt-2 mb-10">
+                Preço do kg, corto do tamanho desejado, fabricado pela Sabor do Leite em Malacacheta - MG.
+              </p>
+              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
+                <p class="font-bold text-lg">R$ 85,00</p>
+                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Queijo Parmesão" data-price="85">
+                  <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Fim Produto Item -->
+          <!-- Fim Produto Item -->
 
-        <!-- Produto Item -->
-        <div class="flex gap-2">
-          <img
-            src="./assets/paoDeQueijo.png"
-            alt="Pão de Queijo"
-            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-          />
-          <div class="w-full pr-4">
-            <p class="font-bold">Pão de Queijo - 1kg</p>
-            <p class="text-sm pt-2">
-              Aproximadamente 40 unidades, fabricado pela Sabor Mineiro,
-              localizado em Serra - ES.
-            </p>
-            <div class="flex items-center gap-2 justify-between mt-3">
-              <p class="font-bold text-lg">R$ 24,00</p>
-              <button
-                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="Pão de Queijo"
-                data-price="24"
-              >
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-              </button>
+          <!-- Produto Item -->
+          <div class="flex gap-2">
+            <img
+              src="./assets/paoDeQueijo.png"
+              alt="Pão de Queijo"
+              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
+            />
+            <div class="w-full pr-4 relative">
+              <p class="font-bold">Pão de Queijo - 1kg</p>
+              <p class="text-sm pt-2 mb-10">
+                Aproximadamente 40 unidades, fabricado pela Sabor Mineiro, localizado em Serra - ES.
+              </p>
+              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
+                <p class="font-bold text-lg">R$ 24,00</p>
+                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Pão de Queijo" data-price="24">
+                  <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Fim Produto Item -->
-
-        <!-- Produto Item -->
-        <div class="flex gap-2">
-          <img
-            src="./assets/queijoParmesao.png"
-            alt="Queijo Parmesão"
-            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-          />
-          <div class="w-full pr-4">
-            <p class="font-bold">Queijo Parmesão - 1kg</p>
-            <p class="text-sm pt-2">
-              Preço do kg, corto do tamanho desejado, fabricado pela Sabor do
-              Leito em Malacacheta - MG.
-            </p>
-            <div class="flex items-center gap-2 justify-between mt-3">
-              <p class="font-bold text-lg">R$ 85,00</p>
-              <button
-                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="Queijo Parmesão"
-                data-price="85"
-              >
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- Fim Produto Item -->
-      </main>
+          <!-- Fim Produto Item -->
+        </main>
+      </section>
+      <!-- Fim Seção Queijos e Derivados -->
 
       <!-- Seção Linguiças -->
-      <div class="mx-auto max-w-7xl px-2 my-2">
-        <h2
-          class="font-bold text-3xl mb-8 flex justify-center border-t-4 pt-10"
-        >
-          Linguiças
-        </h2>
-      </div>
-      <main
-        class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16"
-      >
-        <!-- Produto Item -->
-        <div class="flex gap-2">
-          <img
-            src="./assets/default.png"
-            alt="Capelete de Frango"
-            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-          />
-          <div class="w-full pr-4">
-            <p class="font-bold">Linguiça de Porco Tradicional</p>
-            <p class="text-sm pt-2">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
-              accusamus illum quam similique tempora placeat.
-            </p>
-            <div class="flex items-center gap-2 justify-between mt-3">
-              <p class="font-bold text-lg">R$ $$,$$</p>
-              <button
-                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="Capelete de Frango"
-                data-price="99"
-              >
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-              </button>
+      <section class="linguicas" id="linguicas">
+        <div class="mx-auto max-w-7xl px-2 my-2">
+          <h2 class="font-bold text-3xl mb-10 flex justify-center border-t-4 pt-10">Linguiças</h2>
+        </div>
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+          <!-- Produto Item -->
+          <div class="flex gap-2">
+            <img
+              src="./assets/default.png"
+              alt="Capelete de Frango"
+              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
+            />
+            <div class="w-full pr-4 relative">
+              <p class="font-bold">Linguiça de Porco Tradicional</p>
+              <p class="text-sm pt-2 mb-10"></p>
+              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
+                <p class="font-bold text-lg">R$ $$,$$</p>
+                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Capelete de Frango" data-price="99">
+                  <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Fim Produto Item -->
+          <!-- Fim Produto Item -->
 
-        <!-- Produto Item -->
-        <div class="flex gap-2">
-          <img
-            src="./assets/default.png"
-            alt="Capelete de Frango"
-            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-          />
-          <div class="w-full pr-4">
-            <p class="font-bold">Linguiça de Porco com azeitona</p>
-            <p class="text-sm pt-2">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
-              accusamus illum quam similique tempora placeat.
-            </p>
-            <div class="flex items-center gap-2 justify-between mt-3">
-              <p class="font-bold text-lg">R$ $$,$$</p>
-              <button
-                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="Capelete de Frango"
-                data-price="99"
-              >
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-              </button>
+          <!-- Produto Item -->
+          <div class="flex gap-2">
+            <img
+              src="./assets/default.png"
+              alt="Capelete de Frango"
+              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
+            />
+            <div class="w-full pr-4 relative">
+              <p class="font-bold">Linguiça de Porco com azeitona</p>
+              <p class="text-sm pt-2 mb-10"></p>
+              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
+                <p class="font-bold text-lg">R$ $$,$$</p>
+                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Capelete de Frango" data-price="99">
+                  <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Fim Produto Item -->
-
-        <!-- Produto Item -->
-        <div class="flex gap-2">
-          <img
-            src="./assets/default.png"
-            alt="Capelete de Frango"
-            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-          />
-          <div class="w-full pr-4">
-            <p class="font-bold">Linguiça de Porco com pimenta biquinho</p>
-            <p class="text-sm pt-2">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
-              accusamus illum quam similique tempora placeat.
-            </p>
-            <div class="flex items-center gap-2 justify-between mt-3">
-              <p class="font-bold text-lg">R$ $$,$$</p>
-              <button
-                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="Capelete de Frango"
-                data-price="99"
-              >
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- Fim Produto Item -->
-
-        <!-- Produto Item -->
-        <div class="flex gap-2">
-          <img
-            src="./assets/default.png"
-            alt="Capelete de Frango"
-            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-          />
-          <div class="w-full pr-4">
-            <p class="font-bold">Linguiça de Porco com bacon</p>
-            <p class="text-sm pt-2">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
-              accusamus illum quam similique tempora placeat.
-            </p>
-            <div class="flex items-center gap-2 justify-between mt-3">
-              <p class="font-bold text-lg">R$ $$,$$</p>
-              <button
-                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="Capelete de Frango"
-                data-price="99"
-              >
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- Fim Produto Item -->
-
-        <!-- Produto Item -->
-        <div class="flex gap-2">
-          <img
-            src="./assets/default.png"
-            alt="Capelete de Frango"
-            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-          />
-          <div class="w-full pr-4">
-            <p class="font-bold">Linguiça de Porco com queijo</p>
-            <p class="text-sm pt-2">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
-              accusamus illum quam similique tempora placeat.
-            </p>
-            <div class="flex items-center gap-2 justify-between mt-3">
-              <p class="font-bold text-lg">R$ $$,$$</p>
-              <button
-                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="Capelete de Frango"
-                data-price="99"
-              >
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- Fim Produto Item -->
-      </main>
+          <!-- Fim Produto Item -->
+        </main>
+      </section>
+      <!-- Fim Seção Linguiças -->
 
       <!-- Seção Massas -->
-      <div class="mx-auto max-w-7xl px-2 my-2">
-        <h2
-          class="font-bold text-3xl mb-8 flex justify-center border-t-4 pt-10"
-        >
-          Massas
-        </h2>
-      </div>
-      <main
-        class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16"
-      >
-        <!-- Produto Item -->
-        <div class="flex gap-2">
-          <img
-            src="./assets/capeleteDeFrango.png"
-            alt="Capelete de Frango"
-            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-          />
-          <div class="w-full pr-4">
-            <p class="font-bold">
-              Capelete de Frango ou Frango com Parmesão - 500g
-            </p>
-            <p class="text-sm pt-2">
-              Produzido e comercializado por Fornaciari Capeletes, localizada em
-              João Neiva - ES.
-            </p>
-            <div class="flex items-center gap-2 justify-between mt-3">
-              <p class="font-bold text-lg">R$ 20,00</p>
-              <button
-                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="Capelete de Frango"
-                data-price="20"
-              >
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-              </button>
+      <section class="massas" id="massas">
+        <div class="mx-auto max-w-7xl px-2 my-2">
+          <h2 class="font-bold text-3xl mb-10 flex justify-center border-t-4 pt-10">Massas</h2>
+        </div>
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+          <!-- Produto Item -->
+          <div class="flex gap-2">
+            <img
+              src="./assets/capeleteDeFrango.png"
+              alt="Capelete de Frango"
+              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
+            />
+            <div class="w-full pr-4 relative">
+              <p class="font-bold">Capelete de Frango ou Frango com Parmesão - 500g</p>
+              <p class="text-sm pt-2 mb-10">
+                Produzido e comercializado por Fornaciari Capeletes, localizada em João Neiva - ES.
+              </p>
+              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
+                <p class="font-bold text-lg">R$ 20,00</p>
+                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Capelete de Frango" data-price="20">
+                  <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Fim Produto Item -->
+          <!-- Fim Produto Item -->
 
-        <!-- Produto Item -->
-        <div class="flex gap-2">
-          <img
-            src="./assets/nhoqueDeBatata.png"
-            alt="Nhoque de Batata"
-            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-          />
-          <div class="w-full pr-4">
-            <p class="font-bold">Nhoque de Batata - 500g</p>
-            <p class="text-sm pt-2">
-              Produzido e comercializado por Fornaciari Capeletes, localizada em
-              João Neiva - ES.
-            </p>
-            <div class="flex items-center gap-2 justify-between mt-3">
-              <p class="font-bold text-lg">R$ 18,00</p>
-              <button
-                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="Nhoque de Batata"
-                data-price="18"
-              >
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-              </button>
+          <!-- Produto Item -->
+          <div class="flex gap-2">
+            <img
+              src="./assets/nhoqueDeBatata.png"
+              alt="Nhoque de Batata"
+              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
+            />
+            <div class="w-full pr-4 relative">
+              <p class="font-bold">Nhoque de Batata - 500g</p>
+              <p class="text-sm pt-2 mb-10">
+                Produzido e comercializado por Fornaciari Capeletes, localizada em João Neiva - ES.
+              </p>
+              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
+                <p class="font-bold text-lg">R$ 18,00</p>
+                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Nhoque de Batata" data-price="18">
+                  <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Fim Produto Item -->
+          <!-- Fim Produto Item -->
 
-        <!-- Produto Item -->
-        <div class="flex gap-2">
-          <img
-            src="./assets/default.png"
-            alt="Nhoque de Batata"
-            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-          />
-          <div class="w-full pr-4">
-            <p class="font-bold">Macarrão Talharim</p>
-            <p class="text-sm pt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              nostrum excepturi velit maiores voluptas quis!
-            </p>
-            <div class="flex items-center gap-2 justify-between mt-3">
-              <p class="font-bold text-lg">R$ $$,$$</p>
-              <button
-                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="Nhoque de Batata"
-                data-price="99"
-              >
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-              </button>
+          <!-- Produto Item -->
+          <div class="flex gap-2">
+            <img
+              src="./assets/macarraoTalharim.jpg"
+              alt="Macarrão Talharim - 250g"
+              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
+            />
+            <div class="w-full pr-4 relative">
+              <p class="font-bold">Macarrão Talharim - 250g</p>
+              <p class="text-sm pt-2 mb-10">
+                Produzido e comercializado por Fornaciari Capeletes, localizada em João Neiva - ES.
+              </p>
+              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
+                <p class="font-bold text-lg">R$ 5,00</p>
+                <button
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                  data-name="Macarrão Talharim - 250g"
+                  data-price="5"
+                >
+                  <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Fim Produto Item -->
-      </main>
+          <!-- Fim Produto Item -->
+        </main>
+      </section>
+      <!-- Fim Seção Massas -->
 
       <!-- Seção Outros -->
-      <div class="mx-auto max-w-7xl px-2 my-2">
-        <h2
-          class="font-bold text-3xl mb-8 flex justify-center border-t-4 pt-10"
-        >
-          Outros
-        </h2>
-      </div>
-      <main
-        class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16"
-      >
-        <!-- Produto Item -->
-        <div class="flex gap-2">
-          <img
-            src="./assets/carneDeSol.jpg"
-            alt="Carne de Sol Fatiada - 400g"
-            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-          />
-          <div class="w-full pr-4">
-            <p class="font-bold">Carne de Sol Fatiada - 400g</p>
-            <p class="text-sm pt-2">
-              Carne de Sol de produção própria, toda fatiada em pedacinhos, você
-              só vai precisa preparar.
-            </p>
-            <div class="flex items-center gap-2 justify-between mt-3">
-              <p class="font-bold text-lg">R$ 20,00</p>
-              <button
-                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="Carne de Sol Fatiada - 400g"
-                data-price="20"
-              >
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-              </button>
+      <section class="outros" id="outros">
+        <div class="mx-auto max-w-7xl px-2 my-2">
+          <h2 class="font-bold text-3xl mb-10 flex justify-center border-t-4 pt-10">Outros</h2>
+        </div>
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+          <!-- Produto Item -->
+          <div class="flex gap-2">
+            <img
+              src="./assets/carneDeSol.jpg"
+              alt="Carne de Sol Fatiada - 400g"
+              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
+            />
+            <div class="w-full pr-4 relative">
+              <p class="font-bold">Carne de Sol Fatiada - 400g</p>
+              <p class="text-sm pt-2 mb-10">
+                Carne de Sol de produção própria, toda fatiada em pedacinhos, você só vai precisa preparar.
+              </p>
+              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
+                <p class="font-bold text-lg">R$ 20,00</p>
+                <button
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                  data-name="Carne de Sol Fatiada - 400g"
+                  data-price="20"
+                >
+                  <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Fim Produto Item -->
+          <!-- Fim Produto Item -->
 
-        <!-- Produto Item -->
-        <div class="flex gap-2">
-          <img
-            src="./assets/torresmoRolinho.jpg"
-            alt="Torresmo de Rolinho 1kg - In Natura"
-            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-          />
-          <div class="w-full pr-4">
-            <p class="font-bold">Torresmo de Rolinho In Natura - 1kg</p>
-            <p class="text-sm pt-2">
-              Produção própria, temperado.
-            </p>
-            <div class="flex items-center gap-2 justify-between mt-3">
-              <p class="font-bold text-lg">R$ 30,00</p>
-              <button
-                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="Torresmo de Rolinho 1kg - In Natura"
-                data-price="30"
-              >
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-              </button>
+          <!-- Produto Item -->
+          <div class="flex gap-2">
+            <img
+              src="./assets/torresmoRolinho.jpg"
+              alt="Torresmo de Rolinho 1kg - In Natura"
+              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
+            />
+            <div class="w-full pr-4 relative">
+              <p class="font-bold">Torresmo de Rolinho In Natura - 1kg</p>
+              <p class="text-sm pt-2 mb-10">Produção própria, temperado.</p>
+              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
+                <p class="font-bold text-lg">R$ 30,00</p>
+                <button
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                  data-name="Torresmo de Rolinho 1kg - In Natura"
+                  data-price="30"
+                >
+                  <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Fim Produto Item -->
+          <!-- Fim Produto Item -->
 
-        <!-- Produto Item -->
-        <div class="flex gap-2">
-          <img
-            src="./assets/torresmoRolinhoFrito.jpg"
-            alt="Nhoque de Batata"
-            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-          />
-          <div class="w-full pr-4">
-            <p class="font-bold">Torresmo de Rolinho Frito -  1kg</p>
-            <p class="text-sm pt-2">
-              <span class="font-bold">Feito sob encomenta.</span> Produção própria, temperado.
-            </p>
-            <div class="flex items-center gap-2 justify-between mt-3">
-              <p class="font-bold text-lg">R$ 70,00</p>
-              <button
-                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="Nhoque de Batata"
-                data-price="70"
-              >
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-              </button>
+          <!-- Produto Item -->
+          <div class="flex gap-2">
+            <img
+              src="./assets/torresmoRolinhoFrito.jpg"
+              alt="Torresmo de Rolinho Frito - 1kg"
+              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
+            />
+            <div class="w-full pr-4 relative">
+              <p class="font-bold">Torresmo de Rolinho Frito - 1kg</p>
+              <p class="text-sm pt-2 mb-10">
+                <span class="font-bold">Feito sob encomenta.</span> Produção própria, temperado.
+              </p>
+              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
+                <p class="font-bold text-lg">R$ 70,00</p>
+                <button
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                  data-name="Torresmo de Rolinho Frito - 1kg"
+                  data-price="70"
+                >
+                  <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Fim Produto Item -->
-      </main>
+          <!-- Fim Produto Item -->
 
-      <div class="mx-auto max-w-7xl px-2 my-2">
-        <h2
-          class="font-bold text-3xl mb-8 flex justify-center border-t-4 pt-10"
-        >
-          Bebidas
-        </h2>
-      </div>
+          <!-- Produto Item -->
+          <div class="flex gap-2">
+            <img
+              src="./assets/salameDefumado.jpg"
+              alt="Salame ou Lombo Defumado - 400g"
+              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
+            />
+            <div class="w-full pr-4 relative">
+              <p class="font-bold">Salame ou Lombo Defumado - 400g</p>
+              <p class="text-sm pt-2 mb-10">
+                Produzido por Vila Caipira, produtos tradicionais da Serra da Canastra diretamente para a sua mesa.
+              </p>
+              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
+                <p class="font-bold text-lg">R$ 25,00</p>
+                <button
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                  data-name="Salame ou Lombo Defumado - 400g"
+                  data-price="25"
+                >
+                  <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Fim Produto Item -->
+        </main>
+      </section>
+      <!-- Fim Produtos -->
 
       <!-- Grid Bebidas  -->
-      <div
-        class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16"
-        id="menu"
-      >
-        <!-- Bebida Item -->
-        <div class="flex gap-2 w-full">
-          <img
-            src="./assets/garrafaDeVinho.png"
-            alt="Vinhos diversos"
-            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-          />
-          <div class="w-full pr-4">
-            <p class="font-bold">Vinhos</p>
-            <p class="text-sm pt-2">De diversos tipos, a partir de R$ 40,00.</p>
+      <section class="bebidas" id="bebidas">
+        <div class="mx-auto max-w-7xl px-2 my-2">
+          <h2 class="font-bold text-3xl mb-10 flex justify-center border-t-4 pt-10">Bebidas</h2>
+        </div>
 
-            <div class="flex items-center gap-2 justify-between mt-3">
-              <p class="font-bold text-lg">R$ 40,00</p>
-              <button
-                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="Vinhos diversos"
-                data-price="40"
-              >
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-              </button>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+          <!-- Bebida Item -->
+          <div class="flex gap-2 w-full">
+            <img
+              src="./assets/garrafaDeVinho.png"
+              alt="Vinhos diversos"
+              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
+            />
+            <div class="w-full pr-4 relative">
+              <p class="font-bold">Vinhos</p>
+              <p class="text-sm pt-2 mb-10">De diversos tipos, a partir de R$ 40,00.</p>
+
+              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
+                <p class="font-bold text-lg">R$ 40,00</p>
+                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Vinhos diversos" data-price="40">
+                  <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Fim Bebida Item -->
+          <!-- Fim Bebida Item -->
 
-        <!-- Bebida Item -->
-        <div class="flex gap-2 w-full">
-          <img
-            src="./assets/garrafaDeCachaca.png"
-            alt="Cachaça"
-            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-          />
-          <div class="w-full pr-4">
-            <p class="font-bold">Cachaça</p>
-            <p class="text-sm pt-2">
-              De diversos tipos, a partir de R$ 20,00..
-            </p>
+          <!-- Bebida Item -->
+          <div class="flex gap-2 w-full">
+            <img
+              src="./assets/garrafaDeCachaca.png"
+              alt="Cachaça"
+              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
+            />
+            <div class="w-full pr-4 relative">
+              <p class="font-bold">Cachaça</p>
+              <p class="text-sm pt-2 mb-10">De diversos tipos, a partir de R$ 20,00.</p>
 
-            <div class="flex items-center gap-2 justify-between mt-3">
-              <p class="font-bold text-lg">R$ 20,00</p>
-              <button
-                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                data-name="Cachaça"
-                data-price="20"
-              >
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-              </button>
+              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
+                <p class="font-bold text-lg">R$ 20,00</p>
+                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cachaça" data-price="20">
+                  <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
+                </button>
+              </div>
             </div>
           </div>
+          <!-- Fim Bebida Item -->
         </div>
-        <!-- Fim Bebida Item -->
-      </div>
+      </section>
       <!-- Fim Grid Bebidas  -->
     </div>
     <!-- Fim Menu -->
@@ -631,9 +484,7 @@
       class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden animate-fadeIn"
       id="cart-modal"
     >
-      <div
-        class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px] max-h-[90%] overflow-auto"
-      >
+      <div class="bg-[#f0f3fd] p-5 rounded-md min-w-[90%] md:min-w-[600px] max-h-[90%] overflow-auto">
         <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
 
         <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
@@ -641,12 +492,7 @@
         <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
 
         <p class="font-bold mt-4">Nome:</p>
-        <input
-          type="text"
-          placeholder="Informe seu nome..."
-          id="name"
-          class="w-full border-2 p-1 rounded my-1"
-        />
+        <input type="text" placeholder="Informe seu nome..." id="name" class="w-full border-2 p-1 rounded my-1" />
         <p class="text-red-500 hidden" id="name-warn">Digite seu nome!</p>
 
         <p class="font-bold mt-4">Endereço de Entrega:</p>
@@ -656,45 +502,40 @@
           id="address"
           class="w-full border-2 p-1 rounded my-1"
         />
-        <p class="text-red-500 hidden" id="address-warn">
-          Digite seu endereço completo!
-        </p>
+        <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
 
         <div class="flex items-center justify-between mt-5 w-full">
           <button id="close-modal-btn">Fechar</button>
-          <button
-            id="checkout-btn"
-            class="bg-green-500 text-white px-4 py-1 rounded"
-          >
-            Finalizar pedido
-          </button>
+          <button id="checkout-btn" class="bg-green-500 text-[#f0f3fd] px-4 py-1 rounded">Finalizar pedido</button>
         </div>
         <p class="text-center font-bold mt-8">
-          Obs: Após finalizar o pedido, informarei e disponibilidade do(s)
-          item(ns) no estoque e agendaremos a entrega ou a retirada.
+          Obs: Após finalizar o pedido, informarei e disponibilidade do(s) item(ns) no estoque e agendaremos a entrega
+          ou a retirada.
         </p>
       </div>
     </div>
     <!-- Fim Modal Cart -->
 
     <!-- Button Card Footer -->
-    <footer
-      class="w-full bg-red-600 py-3 fixed bottom-0 z-40 flex items-center justify-center"
-    >
+    <footer class="w-full bg-red-600 py-3 fixed bottom-0 z-40 flex items-center justify-between">
+      <div>
+      </div>
       <button
-        class="flex items-center gap-2 text-white font-bold py-2 px-4 rounded-2xl bg-red-600 shadow shadow-red-950 hover:bg-red-700 hover:scale-110 duration-500"
+        class="flex items-center gap-2 text-[#f0f3fd] font-bold py-2 px-4 rounded-2xl bg-red-600 shadow shadow-red-950 hover:bg-red-700 hover:scale-105 duration-500"
         id="cart-btn"
       >
         (<span id="cart-count">0</span>) Veja meu carrinho
-        <i class="fa fa-cart-plus text-lg text-white"></i>
+        <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
       </button>
+      <div
+        class="text-[#f0f3fd] font-bold mr-2 py-2 px-4 rounded-2xl bg-red-600 shadow shadow-red-950 hover:bg-red-700 hover:scale-105 duration-500"
+      >
+        <a href="#home"><i class="bx bx-up-arrow-alt text-xl"></i></a>
+      </div>
     </footer>
     <!-- Fim Button Card Footer -->
 
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/toastify-js"
-    ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="script.js"></script>
   </body>
 </html>
