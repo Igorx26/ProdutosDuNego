@@ -1,3 +1,5 @@
+<img src="assets/mockupComLogo.png">
+
 <h1 align="center" style="font-weight: bold;">Produtos Du Nego </h1>
 
 <p align="center">
@@ -19,9 +21,36 @@
      <a href="https://produtosdunego.vercel.app">Visite este projeto</a>
 </p>
 
-## Imagens da página:
+##
 
-<p align="center">
-    <img src="assets/pageImg1.png" alt="home" width="400px">
-    <img src="assets/pageImg2.png" alt="home" width="400px">
-</p>
+### ⚙️ Pré-requisitos
+
+Necessário ter Node.js instalado, para verificar digite no seu terminal.
+
+```bash
+node -v
+```
+Caso não tenha instalado, faça download no site [nodejs.org](https://nodejs.org).
+
+### 🔨 Guia de instalação
+
+Abra o terminal na pasta em que deseja instalar o projeto e execute:
+```bash
+git clone https://github.com/Igorx26/ProdutosDuNego.git
+```
+Entre na pasta ProdutosDuNego:
+```bash
+cd ProdutosDuNego
+```
+Instale as dependências:
+```bash
+npm install
+```
+Rode o projeto:
+```bash
+npm run dev
+```
+
+## 📄 Licença
+
+Esse projeto está sob a licença MIT License - acesse os detalhes [LICENSE.md](https://github.com/Igorx26/ProdutosDuNego/blob/main/LICENSE).
