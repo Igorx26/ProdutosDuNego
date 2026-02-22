@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
@@ -34,7 +34,7 @@
   <body>
     <!-- Header -->
     <section class="home" id="home">
-      <header class="w-full h-[500px] bg-zinc-900 bg-home bg-cover bg-center" id="home">
+      <header class="w-full h-auto min-h-[600px] bg-zinc-900 bg-home bg-cover bg-center pb-12 pt-20" id="home">
         <div
           class="z-40 flex items-center h-10 bg-[#f0f3fd] border-b border-zinc-300 fixed w-full font-bold text-xl top-0 justify-around"
         >
@@ -43,12 +43,12 @@
 
           <nav class="flex text-[1.1rem] font-bold gap-6 navbar">
             <a
-              class="hover:text-red-600 hover:scale-105 focus active:text-red-600 active:scale-105 duration-500 destaque"
+              class="hover:text-red-600 hover:scale-105 active:text-red-600 active:scale-105 duration-500 destaque"
               href="#home"
               >Início</a
             >
             <a
-              class="hover:text-red-600 hover:scale-105 focus active:text-red-600 active:scale-105 duration-500"
+              class="hover:text-red-600 hover:scale-105 active:text-red-600 active:scale-105 duration-500"
               href="#queijos"
               >Queijos e Derivados</a
             >
@@ -75,323 +75,434 @@
           </nav>
         </div>
 
-        <div class="w-full h-full flex flex-col justify-center items-center mt-10">
+        <div class="w-full flex flex-col justify-center items-center px-4">
           <img
             src="./assets/LogoProdutosduNego.png"
             alt="Logo Produtos Du Nego"
             class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
           />
-          <h1 class="text-4xl mt-4 mb-2 font-bold text-[#f0f3fd]">Produtos Du Nego</h1>
+          <h1 class="text-4xl mt-4 mb-4 font-bold text-[#f0f3fd] text-center drop-shadow-md">Produtos Du Nego</h1>
 
-          <span class="text-[#f0f3fd] font-medium mb-2 mx-4"
-            >Rua Pedro Álvares Cabral, nº 64, Bairro de Fátima, Serra - ES</span
-          >
-          <span class="text-[#f0f3fd] font-medium mx-4">Entrega grátis em Bairro de Fátima e região.</span>
-          <span class="text-[#f0f3fd] font-medium mx-4">Entre em contato para mais informações:</span>
-          <div class="flex justify-center items-center gap-2 mx-4">
-            <i class="bx bxl-whatsapp text-[#f0f3fd] text-2xl font-medium items-center"></i>
-            <span class="text-[#f0f3fd] font-medium items-center">(27) 99871-3286</span>
-          </div>
-          <div class="flex justify-center items-center gap-2 mx-4">
-            <i class="bx bxl-instagram text-[#f0f3fd] text-2xl font-medium items-center"></i>
-            <span class="text-[#f0f3fd] font-medium items-center">@produtosdunego</span>
+          <div class="flex flex-col items-center space-y-2 mb-6 text-center">
+            <p class="text-[#f0f3fd] font-medium max-w-md">
+              Rua Pedro Álvares Cabral, nº 64,<br />
+              Bairro de Fátima, Serra - ES
+            </p>
+            <p class="text-green-400 font-bold bg-green-900/30 px-3 py-1 rounded-full text-md mt-2">
+              <i class="bx bxs-truck mr-1"></i> Entrega grátis em Bairro de Fátima e região
+            </p>
           </div>
 
-          <div class="bg-green-600 px-4 py-1 rounded-lg mt-3" id="date-span">
-            <span class="text-[#f0f3fd] font-medium mx-4">Seg à Dom - 08:00 às 22:00</span>
+          <p class="text-[#f0f3fd] font-medium mb-3 text-center">Entre em contato:</p>
+
+          <div class="flex flex-col sm:flex-row gap-4 mb-6">
+            <a
+              href="https://wa.me/5527998713286?text=Olá! Vi o catálogo e gostaria de saber mais."
+              target="_blank"
+              class="flex justify-center items-center gap-2 px-5 py-2 rounded-xl bg-white/10 hover:bg-white/20 border border-white/10 hover:scale-105 transition-all duration-300 backdrop-blur-sm"
+            >
+              <i class="bx bxl-whatsapp text-[#f0f3fd] text-2xl"></i>
+              <span class="text-[#f0f3fd] font-medium">(27) 99871-3286</span>
+            </a>
+
+            <a
+              href="https://www.instagram.com/produtosdunego"
+              target="_blank"
+              class="flex justify-center items-center gap-2 px-5 py-2 rounded-xl bg-white/10 hover:bg-white/20 border border-white/10 hover:scale-105 transition-all duration-300 backdrop-blur-sm"
+            >
+              <i class="bx bxl-instagram text-[#f0f3fd] text-2xl"></i>
+              <span class="text-[#f0f3fd] font-medium">@produtosdunego</span>
+            </a>
+          </div>
+
+          <div class="bg-green-600 px-5 py-2 rounded-lg shadow-md" id="date-span">
+            <p class="text-[#f0f3fd] font-bold tracking-wide text-center">
+              <i class="bx bx-time-five mr-1"></i> Seg à Dom - 08:00 às 22:00
+            </p>
           </div>
         </div>
       </header>
     </section>
     <!-- Fim Header -->
 
-    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-10">Conheça nossos produtos</h2>
+    <h2 class="text-2xl text-zinc-900 md:text-3xl font-bold text-center mt-9 mb-10">Conheça nossos produtos</h2>
 
     <!-- Menu -->
     <div id="menu" class="pb-16">
       <!-- Seção Queijos e Derivados -->
-      <section class="queijos" id="queijos">
-        <div class="mx-auto max-w-7xl px-2 my-2">
-          <h2 class="font-bold text-3xl mb-10 flex justify-center border-t-4 pt-10">Queijos e Derivados</h2>
+      <section class="queijos scroll-mt-20" id="queijos">
+        <div class="mx-auto max-w-7xl px-4 mt-16 mb-10 flex flex-col items-center">
+          <h2 class="font-bold text-3xl text-zinc-900 text-center">Queijos e Derivados</h2>
+          <div class="h-1.5 w-32 bg-red-600 rounded-full mt-3"></div>
         </div>
+
         <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/queijos-e-derivados/queijoMinasMeiaCura.jpg"
-              alt="Queijo Minas Meia Cura - 1kg"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Queijo Minas Meia Cura - 1kg</p>
-              <p class="text-sm pt-2 mb-10">Temos peças de 800g a 1,1kg, porcionamos meia peça.</p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 60,00</p>
-                <button
-                  class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                  data-name="Queijo Minas Meia Cura - 1kg"
-                  data-price="60"
-                >
-                  <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/queijos-e-derivados/queijoMinasMeiaCura.jpg"
+                alt="Queijo Minas Meia Cura - 1kg"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Queijo Minas Meia Cura - 1kg</p>
+                <p class="text-sm text-zinc-700 mt-1">Temos peças de 800g a 1,1kg, porcionamos meia peça.</p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 60,00</p>
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/queijos-e-derivados/queijoParmesao.jpg"
-              alt="Queijo Parmesão"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Queijo Parmesão - 1kg</p>
-              <p class="text-sm pt-2 mb-10">
-                Cortamos do tamanho e peso desejado. Fabricado pela Sabor do Leite em Malacacheta - MG.
-              </p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 95,00</p>
-                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Queijo Parmesão" data-price="95">
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/queijos-e-derivados/queijoParmesao.jpg"
+                alt="Queijo Parmesão"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Queijo Parmesão - 1kg</p>
+                <p class="text-sm text-zinc-700 mt-1">
+                  Cortamos do tamanho e peso desejado. Fabricado pela Sabor do Leite em Malacacheta - MG.
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 95,00</p>
+                <!-- <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Queijo Parmesão" data-price="95">
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/queijos-e-derivados/queijoProvolone.webp"
-              alt="Queijo Provolone - 1pç"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Queijo Provolone - 1pç</p>
-              <p class="text-sm pt-2 mb-10">O peso médio de cada peça é 200g.</p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 15,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/queijos-e-derivados/queijoProvolone.webp"
+                alt="Queijo Provolone - 1pç"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Queijo Provolone - 1pç</p>
+                <p class="text-sm text-zinc-700 mt-1">O peso médio de cada peça é 200g.</p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 15,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
                   data-name="Queijo Provolone - 1pç"
                   data-price="15"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/queijos-e-derivados/queijoCoalho.jpg"
-              alt="Queijo Coalho - 1kg"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Queijo Coalho - 1kg</p>
-              <p class="text-sm pt-2 mb-10">Peças a partir de 500g.</p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 65,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/queijos-e-derivados/queijoCoalho.jpg"
+                alt="Queijo Coalho - 1kg"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Queijo Coalho - 1kg</p>
+                <p class="text-sm text-zinc-700 mt-1">Peças a partir de 500g.</p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 65,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
                   data-name="Queijo Coalho - 1kg"
                   data-price="65"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/queijos-e-derivados/queijoCozido.jpg"
-              alt="Queijo Cozido - 1kg"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Queijo Cozido - 1kg</p>
-              <p class="text-sm pt-2 mb-10"></p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 50,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/queijos-e-derivados/queijoCozido.jpg"
+                alt="Queijo Cozido - 1kg"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Queijo Cozido - 1kg</p>
+                <p class="text-sm text-zinc-700 mt-1"></p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 50,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
                   data-name="Queijo Cozido - 1kg"
                   data-price="50"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/queijos-e-derivados/queijoCozido.jpg"
-              alt="Queijo Cozido - 500g"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Queijo Cozido - 500g</p>
-              <p class="text-sm pt-2 mb-10"></p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 25,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/queijos-e-derivados/queijoCozido.jpg"
+                alt="Queijo Cozido - 500g"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Queijo Cozido - 500g</p>
+                <p class="text-sm text-zinc-700 mt-1"></p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 25,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
                   data-name="Queijo Cozido - 500g"
                   data-price="25"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/queijos-e-derivados/manteiga.jpeg"
-              alt="Manteiga - 500g"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Manteiga - 500g</p>
-              <p class="text-sm pt-2 mb-10">
-                Manteiga artesanal rica em sabores e perfeita para ser utilizada em qualquer momento do seu dia.
-              </p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 23,00</p>
-                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Manteiga - 500g" data-price="23">
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/queijos-e-derivados/manteiga.jpeg"
+                alt="Manteiga - 500g"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Manteiga - 500g</p>
+                <p class="text-sm text-zinc-700 mt-1">
+                  Manteiga artesanal rica em sabores e perfeita para ser utilizada em qualquer momento do seu dia.
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 23,00</p>
+                <!-- <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Manteiga - 500g" data-price="23">
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/queijos-e-derivados/paoDeQueijo.jpg"
-              alt="Pão de Queijo"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Pão de Queijo - 1kg</p>
-              <p class="text-sm pt-2 mb-10">
-                Aproximadamente 40 unidades. Fabricado pela Sabor Mineiro, localizado em Serra - ES.
-              </p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 25,00</p>
-                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Pão de Queijo" data-price="25">
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/queijos-e-derivados/paoDeQueijo.jpg"
+                alt="Pão de Queijo"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Pão de Queijo - 1kg</p>
+                <p class="text-sm text-zinc-700 mt-1">
+                  Aproximadamente 40 unidades. Fabricado pela Sabor Mineiro, localizado em Serra - ES.
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 25,00</p>
+                <!-- <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Pão de Queijo" data-price="25">
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/queijos-e-derivados/requeijao.jpg"
-              alt="Requeijão de Corte - 1kg"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Requeijão de Corte - 1kg</p>
-              <p class="text-sm pt-2 mb-10">Cortamos do tamanho e peso desejado.</p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 75,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/queijos-e-derivados/requeijao.jpg"
+                alt="Requeijão de Corte - 1kg"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Requeijão de Corte - 1kg</p>
+                <p class="text-sm text-zinc-700 mt-1">Cortamos do tamanho e peso desejado.</p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 75,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
                   data-name="Requeijão de Corte - 1kg"
                   data-price="75"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/queijos-e-derivados/requeijaoBarra.jpg"
-              alt="Requeijão em barra - 500g"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Requeijão em barra - 500g</p>
-              <p class="text-sm pt-2 mb-10">Peso médio por unidade.</p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 60,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/queijos-e-derivados/requeijaoBarra.jpg"
+                alt="Requeijão em barra - 500g"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Requeijão em barra - 500g</p>
+                <p class="text-sm text-zinc-700 mt-1">Peso médio por unidade.</p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 60,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
                   data-name="Requeijão em barra - 500g"
                   data-price="60"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/queijos-e-derivados/requeijaoCremoso.jpg"
-              alt="Requeijão cremoso - 250g"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Requeijão cremoso - 250g</p>
-              <p class="text-sm pt-2 mb-10"></p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 9,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/queijos-e-derivados/requeijaoCremoso.jpg"
+                alt="Requeijão cremoso - 250g"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Requeijão cremoso - 250g</p>
+                <p class="text-sm text-zinc-700 mt-1"></p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 9,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
                   data-name="Requeijão cremoso - 250g"
                   data-price="9"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/queijos-e-derivados/queijoPalmitinho.jpg"
-              alt="Queijo tipo palmitinho - 500g"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Queijo tipo palmitinho - 500g</p>
-              <p class="text-sm pt-2 mb-10">Peso médio por embalagem.</p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 65,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/queijos-e-derivados/queijoPalmitinho.jpg"
+                alt="Queijo tipo palmitinho - 500g"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Queijo tipo palmitinho - 500g</p>
+                <p class="text-sm text-zinc-700 mt-1">Peso médio por embalagem.</p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 65,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
                   data-name="Queijo tipo palmitinho - 500g"
                   data-price="65"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
@@ -401,104 +512,137 @@
       <!-- Fim Seção Queijos e Derivados -->
 
       <!-- Seção Linguiças -->
-      <section class="linguicas" id="linguicas">
-        <div class="mx-auto max-w-7xl px-2 my-2">
-          <h2 class="font-bold text-3xl mb-10 flex justify-center border-t-4 pt-10">Linguiças</h2>
+      <section class="linguicas scroll-mt-20" id="linguicas">
+        <div class="mx-auto max-w-7xl px-4 mt-16 mb-10 flex flex-col items-center">
+          <h2 class="font-bold text-3xl text-zinc-900 text-center">Linguiças</h2>
+          <div class="h-1.5 w-32 bg-red-600 rounded-full mt-3"></div>
         </div>
         <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/linguicas/linguicaSuina.jpg"
-              alt="Linguiça Suína Tradicional - 1kg"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Linguiça Suína Tradicional - 1kg</p>
-              <p class="text-sm pt-2 mb-10">Feita com pernil suino.</p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 33,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/linguicas/linguicaSuina.jpg"
+                alt="Linguiça Suína Tradicional - 1kg"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Linguiça Suína Tradicional - 1kg</p>
+                <p class="text-sm text-zinc-700 mt-1">Feita com pernil suino.</p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 33,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
                   data-name="Linguiça Suína Tradicional - 1kg"
                   data-price="33"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/linguicas/linguicaSuina.jpg"
-              alt="Linguiça Suína Tradicional com Pimenta - 1kg"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Linguiça Suína Tradicional com Pimenta - 1kg</p>
-              <p class="text-sm pt-2 mb-10">Feita com pernil suino.</p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 33,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/linguicas/linguicaSuina.jpg"
+                alt="Linguiça Suína Tradicional com Pimenta - 1kg"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Linguiça Suína Tradicional com Pimenta - 1kg</p>
+                <p class="text-sm text-zinc-700 mt-1">Feita com pernil suino.</p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 33,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
                   data-name="Linguiça Suína Tradicional com Pimenta - 1kg"
                   data-price="33"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/linguicas/linguicasRecheadas.jpg"
-              alt="Linguiça Suína Recheada - 1kg"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Linguiça Suína Recheada - 1kg</p>
-              <p class="text-sm pt-2 mb-10">
-                Temos com recheio de azeitona, bacon, jiló, carne seca e pimenta biquinho.
-              </p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 33,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/linguicas/linguicasRecheadas.jpg"
+                alt="Linguiça Suína Recheada - 1kg"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Linguiça Suína Recheada - 1kg</p>
+                <p class="text-sm text-zinc-700 mt-1">
+                  Temos com recheio de azeitona, bacon, jiló, carne seca e pimenta biquinho.
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 33,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
                   data-name="Linguiça Suína Recheada - 1kg"
                   data-price="33"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/linguicas/linguicaSuinaDefumada.jpg"
-              alt="Linguiça Suína Defumada - 1kg"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Linguiça Suína Defumada - 1kg</p>
-              <p class="text-sm pt-2 mb-10">Feita com pernil suino.</p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 35,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/linguicas/linguicaSuinaDefumada.jpg"
+                alt="Linguiça Suína Defumada - 1kg"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Linguiça Suína Defumada - 1kg</p>
+                <p class="text-sm text-zinc-700 mt-1">Feita com pernil suino.</p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 35,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
                   data-name="Linguiça Suína Defumada - 1kg"
                   data-price="35"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
@@ -508,162 +652,212 @@
       <!-- Fim Seção Linguiças -->
 
       <!-- Seção Massas -->
-      <section class="massas" id="massas">
-        <div class="mx-auto max-w-7xl px-2 my-2">
-          <h2 class="font-bold text-3xl mb-10 flex justify-center border-t-4 pt-10">Massas</h2>
+      <section class="massas scroll-mt-20" id="massas">
+        <div class="mx-auto max-w-7xl px-4 mt-16 mb-10 flex flex-col items-center">
+          <h2 class="font-bold text-3xl text-zinc-900 text-center">Massas</h2>
+          <div class="h-1.5 w-32 bg-red-600 rounded-full mt-3"></div>
         </div>
+
         <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/massas/capeleteDeFrango.png"
-              alt="Capelete de Frango - 500g"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Capelete de Frango - 500g</p>
-              <p class="text-sm pt-2 mb-10">
-                Produzido e comercializado por Fornaciari Capeletes, localizada em João Neiva - ES.
-              </p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 22,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/massas/capeleteDeFrango.png"
+                alt="Capelete de Frango - 500g"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Capelete de Frango - 500g</p>
+                <p class="text-sm text-zinc-700 mt-1">
+                  Produzido e comercializado por Fornaciari Capeletes, localizada em João Neiva - ES.
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 22,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
                   data-name="Capelete de Frango - 500g"
                   data-price="22"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/massas/capeleteDeFrango.png"
-              alt="Capelete de Frango com Parmesão - 500g"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Capelete de Frango com Parmesão - 500g</p>
-              <p class="text-sm pt-2 mb-10">
-                Produzido e comercializado por Fornaciari Capeletes, localizada em João Neiva - ES.
-              </p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 23,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/massas/capeleteDeFrango.png"
+                alt="Capelete de Frango com Parmesão - 500g"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Capelete de Frango com Parmesão - 500g</p>
+                <p class="text-sm text-zinc-700 mt-1">
+                  Produzido e comercializado por Fornaciari Capeletes, localizada em João Neiva - ES.
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 23,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
                   data-name="Capelete de Frango com Parmesão - 500g"
                   data-price="23"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/massas/capeleteDeCarne.png"
-              alt="Capelete de Carne - 500g"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Capelete de Carne - 500g</p>
-              <p class="text-sm pt-2 mb-10">
-                Produzido e comercializado por Fornaciari Capeletes, localizada em João Neiva - ES.
-              </p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 22,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/massas/capeleteDeCarne.png"
+                alt="Capelete de Carne - 500g"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Capelete de Carne - 500g</p>
+                <p class="text-sm text-zinc-700 mt-1">
+                  Produzido e comercializado por Fornaciari Capeletes, localizada em João Neiva - ES.
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 22,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
                   data-name="Capelete de Carne - 500g"
                   data-price="22"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/massas/capeleteDeQueijo.png"
-              alt="Capelete de Queijo - 500g"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Capelete de Queijo - 500g</p>
-              <p class="text-sm pt-2 mb-10">
-                Produzido e comercializado por Fornaciari Capeletes, localizada em João Neiva - ES.
-              </p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 23,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/massas/capeleteDeQueijo.png"
+                alt="Capelete de Queijo - 500g"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Capelete de Queijo - 500g</p>
+                <p class="text-sm text-zinc-700 mt-1">
+                  Produzido e comercializado por Fornaciari Capeletes, localizada em João Neiva - ES.
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 23,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
                   data-name="Capelete de Queijo - 500g"
                   data-price="23"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/massas/nhoqueDeBatata.png"
-              alt="Nhoque de Batata - 500g"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Nhoque de Batata - 500g</p>
-              <p class="text-sm pt-2 mb-10">
-                Produzido e comercializado por Fornaciari Capeletes, localizada em João Neiva - ES.
-              </p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 21,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/massas/nhoqueDeBatata.png"
+                alt="Nhoque de Batata - 500g"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Nhoque de Batata - 500g</p>
+                <p class="text-sm text-zinc-700 mt-1">
+                  Produzido e comercializado por Fornaciari Capeletes, localizada em João Neiva - ES.
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 21,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
                   data-name="Nhoque de Batata - 500g"
                   data-price="21"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/massas/macarraoTalharim.jpg"
-              alt="Macarrão Talharim - 300g"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Macarrão Talharim - 300g</p>
-              <p class="text-sm pt-2 mb-10">
-                Produzido e comercializado por Fornaciari Capeletes, localizada em João Neiva - ES.
-              </p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 7,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/massas/macarraoTalharim.jpg"
+                alt="Macarrão Talharim - 300g"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Macarrão Talharim - 300g</p>
+                <p class="text-sm text-zinc-700 mt-1">
+                  Produzido e comercializado por Fornaciari Capeletes, localizada em João Neiva - ES.
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 7,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
                   data-name="Macarrão Talharim - 300g"
                   data-price="7"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
@@ -673,446 +867,597 @@
       <!-- Fim Seção Massas -->
 
       <!-- Seção Outros -->
-      <section class="outros" id="outros">
-        <div class="mx-auto max-w-7xl px-2 my-2">
-          <h2 class="font-bold text-3xl mb-10 flex justify-center border-t-4 pt-10">Outros</h2>
+      <section class="outros scroll-mt-20" id="outros">
+        <div class="mx-auto max-w-7xl px-4 mt-16 mb-10 flex flex-col items-center">
+          <h2 class="font-bold text-3xl text-zinc-900 text-center">Outros</h2>
+          <div class="h-1.5 w-32 bg-red-600 rounded-full mt-3"></div>
         </div>
+
         <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/outros/carneSeca.jpg"
-              alt="Carne seca - 1kg"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Carne seca - 1kg</p>
-              <p class="text-sm pt-2 mb-10"></p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 60,00</p>
-                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Carne seca - 1kg" data-price="60">
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/outros/carneSeca.jpg"
+                alt="Carne seca - 1kg"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Carne seca - 1kg</p>
+                <p class="text-sm text-zinc-700 mt-1"></p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 60,00</p>
+                <!-- <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Carne seca - 1kg" data-price="60">
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/outros/frangoCaipira.webp"
-              alt="Frango caipira limpo - 1kg"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Frango caipira limpo - 1kg</p>
-              <p class="text-sm pt-2 mb-10">Unidades de 1,2kg a 2,5kg, preço do quilo.</p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 35,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/outros/frangoCaipira.webp"
+                alt="Frango caipira limpo - 1kg"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Frango caipira limpo - 1kg</p>
+                <p class="text-sm text-zinc-700 mt-1">Unidades de 1,2kg a 2,5kg, preço do quilo.</p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 35,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
                   data-name="Frango caipira limpo - 1kg"
                   data-price="35"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/outros/pato.jpg"
-              alt="Pato limpo - 1kg"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Pato limpo - 1kg</p>
-              <p class="text-sm pt-2 mb-10">
-                <strong>Vendido sob encomenda.</strong> Peso médio por unidade 2,5kg, preço do quilo.
-              </p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 35,00</p>
-                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Pato limpo - 1kg" data-price="35">
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/outros/pato.jpg"
+                alt="Pato limpo - 1kg"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Pato limpo - 1kg</p>
+                <p class="text-sm text-zinc-700 mt-1">
+                  <strong>Vendido sob encomenda.</strong> Peso médio por unidade 2,5kg, preço do quilo.
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 35,00</p>
+                <!-- <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Pato limpo - 1kg" data-price="35">
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/outros/galinhaDangola.jpg"
-              alt="Galinha-d'angola - 1 Unidade"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Galinha-d'angola - 1 Unidade</p>
-              <p class="text-sm pt-2 mb-10">
-                <strong>Vendido sob encomenda.</strong> Peso médio por unidade 1,5kg, preço da unidade.
-              </p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 60,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/outros/galinhaDangola.jpg"
+                alt="Galinha-d'angola - 1 Unidade"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Galinha-d'angola - 1 Unidade</p>
+                <p class="text-sm text-zinc-700 mt-1">
+                  <strong>Vendido sob encomenda.</strong> Peso médio por unidade 1,5kg, preço da unidade.
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 60,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                  data-name="Galinha-d'angola - 1 Unidade"
+                data-name="Galinha-d'angola - 1 Unidade"
                   data-price="60"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/outros/carneDeSol.jpg"
-              alt="Carne de Sol Fatiada - 400g"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Carne de Sol Fatiada - 400g</p>
-              <p class="text-sm pt-2 mb-10">
-                Produção própria, toda fatiada em pedacinhos, você só vai precisa preparar.
-              </p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 22,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/outros/carneDeSol.jpg"
+                alt="Carne de Sol Fatiada - 400g"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Carne de Sol Fatiada - 400g</p>
+                <p class="text-sm text-zinc-700 mt-1">
+                  Produção própria, toda fatiada em pedacinhos, você só vai precisa preparar.
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 24,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
                   data-name="Carne de Sol Fatiada - 400g"
-                  data-price="22"
+                  data-price="24"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/outros/torresmoRolinho.jpg"
-              alt="Torresmo de Rolinho 1kg - In Natura"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Torresmo de Rolinho In Natura - 1kg</p>
-              <p class="text-sm pt-2 mb-10">Produção própria, já temperado.</p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 38,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/outros/torresmoRolinho.jpg"
+                alt="Torresmo de Rolinho 1kg - In Natura"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Torresmo de Rolinho In Natura - 1kg</p>
+                <p class="text-sm text-zinc-700 mt-1">Produção própria, já temperado.</p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 38,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
                   data-name="Torresmo de Rolinho 1kg - In Natura"
                   data-price="38"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/outros/torresmoRolinhoFrito.jpg"
-              alt="Torresmo de Rolinho Frito - 1kg"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Torresmo de Rolinho Frito - 1kg</p>
-              <p class="text-sm pt-2 mb-10">
-                <span class="font-bold">Feito sob encomenta.</span> Produção própria, já temperado.
-              </p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 90,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/outros/torresmoRolinhoFrito.jpg"
+                alt="Torresmo de Rolinho Frito - 1kg"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Torresmo de Rolinho Frito - 1kg</p>
+                <p class="text-sm text-zinc-700 mt-1">
+                  <span class="font-bold">Feito sob encomenta.</span> Produção própria, já temperado.
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 90,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
                   data-name="Torresmo de Rolinho Frito - 1kg"
                   data-price="90"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/outros/salameDefumado.jpg"
-              alt="Salame ou Lombo Defumado - 400g"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Salame ou Lombo Defumado - 400g</p>
-              <p class="text-sm pt-2 mb-10">
-                Produzido por Vila Caipira, produtos tradicionais da Serra da Canastra diretamente para a sua mesa.
-              </p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 28,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/outros/salameDefumado.jpg"
+                alt="Salame ou Lombo Defumado - 400g"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Salame ou Lombo Defumado - 400g</p>
+                <p class="text-sm text-zinc-700 mt-1">
+                  Produzido por Vila Caipira, produtos tradicionais da Serra da Canastra diretamente para a sua mesa.
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 28,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
                   data-name="Salame ou Lombo Defumado - 400g"
                   data-price="28"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
+          <!-- <div class="flex gap-2">
             <img
               src="./assets/outros/bolinhoDeBacalhau.jpg"
               alt="Bolinho de Bacalhau - 500g"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
+              class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
             />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Bolinho de Bacalhau - 500g</p>
-              <p class="text-sm pt-2 mb-10">
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+              <p class="font-bold text-zinc-800 leading-tight">Bolinho de Bacalhau - 500g</p>
+              <p class="text-sm text-zinc-700 mt-1">
                 Produzido e comercializado por Fornaciari Capeletes, localizada em João Neiva - ES.
               </p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 35,00</p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 35,00</p>
                 <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                  data-name="Bolinho de Bacalhau - 500g"
+                data-name="Bolinho de Bacalhau - 500g"
                   data-price="35"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
                 </button>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/outros/coxinha.jpg"
-              alt="Coxinha - 500g"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Coxinha - 500g</p>
-              <p class="text-sm pt-2 mb-10">
-                Produzido e comercializado por Fornaciari Capeletes, localizada em João Neiva - ES.
-              </p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 18,00</p>
-                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coxinha - 500g" data-price="18">
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/outros/coxinha.jpg"
+                alt="Coxinha - 500g"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Coxinha - 500g</p>
+                <p class="text-sm text-zinc-700 mt-1">
+                  Produzido e comercializado por Fornaciari Capeletes, localizada em João Neiva - ES.
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 18,00</p>
+                <!-- <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coxinha - 500g" data-price="18">
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/outros/quibe.jpg"
-              alt="Coxinha - 500g"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Quibe - 500g</p>
-              <p class="text-sm pt-2 mb-10">
-                Produzido e comercializado por Fornaciari Capeletes, localizada em João Neiva - ES.
-              </p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 18,00</p>
-                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Quibe - 500g" data-price="18">
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/outros/quibe.jpg"
+                alt="Coxinha - 500g"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Quibe - 500g</p>
+                <p class="text-sm text-zinc-700 mt-1">
+                  Produzido e comercializado por Fornaciari Capeletes, localizada em João Neiva - ES.
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 18,00</p>
+                <!-- <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Quibe - 500g" data-price="18">
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/outros/pernilSuino.jpg"
-              alt="Pernil Suíno Defumado - 1kg"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Pernil Suíno Defumado - 1kg</p>
-              <p class="text-sm pt-2 mb-10">Sem osso.</p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 46,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/outros/pernilSuino.jpg"
+                alt="Pernil Suíno Defumado - 1kg"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Pernil Suíno Defumado - 1kg</p>
+                <p class="text-sm text-zinc-700 mt-1">Sem osso.</p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 46,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
                   data-name="Pernil Suíno Defumado - 1kg"
                   data-price="46"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/outros/goiabadaCascao.jpg"
-              alt="Goiabada Cascão - 1kg"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Goiabada Cascão - 1kg</p>
-              <p class="text-sm pt-2 mb-10">Cortamos do tamanho e peso desejado.</p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 20,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/outros/goiabadaCascao.jpg"
+                alt="Goiabada Cascão - 1kg"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Goiabada Cascão - 1kg</p>
+                <p class="text-sm text-zinc-700 mt-1">Cortamos do tamanho e peso desejado.</p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 20,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
                   data-name="Goiabada Cascão - 1kg"
                   data-price="20"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/outros/raboSuino.jpg"
-              alt="Rabo Suíno"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Rabo Suíno</p>
-              <p class="text-sm pt-2 mb-10"></p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 22,00</p>
-                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Rabo Suíno" data-price="22">
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/outros/raboSuino.jpg"
+                alt="Rabo Suíno"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Rabo Suíno</p>
+                <p class="text-sm text-zinc-700 mt-1"></p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 22,00</p>
+                <!-- <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Rabo Suíno" data-price="22">
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/outros/melFavo.jpg"
-              alt="Mel c/ favos - 750g"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Mel com favos - 750g</p>
-              <p class="text-sm pt-2 mb-10"></p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 38,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/outros/melFavo.jpg"
+                alt="Mel c/ favos - 750g"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Mel com favos - 750g</p>
+                <p class="text-sm text-zinc-700 mt-1"></p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 38,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
                   data-name="Mel c/ favos - 750g"
                   data-price="38"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/outros/mel280g.jpg"
-              alt="Mel - 280g"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Mel - 280g</p>
-              <p class="text-sm pt-2 mb-10"></p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 15,00</p>
-                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Mel - 280g" data-price="15">
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/outros/mel280g.jpg"
+                alt="Mel - 280g"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Mel - 280g</p>
+                <p class="text-sm text-zinc-700 mt-1"></p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 15,00</p>
+                <!-- <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Mel - 280g" data-price="15">
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/outros/mel500g.jpg"
-              alt="Mel - 500g"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Mel - 500g</p>
-              <p class="text-sm pt-2 mb-10"></p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 25,00</p>
-                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Mel - 500g" data-price="25">
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/outros/mel500g.jpg"
+                alt="Mel - 500g"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Mel - 500g</p>
+                <p class="text-sm text-zinc-700 mt-1"></p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 25,00</p>
+                <!-- <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Mel - 500g" data-price="25">
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/outros/mel1kg.jpg"
-              alt="Mel - 1kg"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Mel - 1kg</p>
-              <p class="text-sm pt-2 mb-10"></p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 38,00</p>
-                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Mel - 1kg" data-price="38">
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/outros/mel1kg.jpg"
+                alt="Mel - 1kg"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Mel - 1kg</p>
+                <p class="text-sm text-zinc-700 mt-1"></p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 38,00</p>
+                <!-- <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Mel - 1kg" data-price="38">
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
           <!-- Fim Produto Item -->
 
           <!-- Produto Item -->
-          <div class="flex gap-2">
-            <img
-              src="./assets/outros/molhoPimenta.jpg"
-              alt="Molho de Pimenta Caseiro - 150ml"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Molho de Pimenta Caseiro - 150ml</p>
-              <p class="text-sm pt-2 mb-10">Produção própria, com ou sem shoyu.</p>
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 5,00</p>
-                <button
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/outros/molhoPimenta.jpg"
+                alt="Molho de Pimenta Caseiro - 150ml"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Molho de Pimenta Caseiro - 150ml</p>
+                <p class="text-sm text-zinc-700 mt-1">Produção própria, com ou sem shoyu.</p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 5,00</p>
+                <!-- <button
                   class="bg-gray-900 px-5 rounded add-to-cart-btn"
                   data-name="Molho de Pimenta Caseiro - 150ml"
                   data-price="5"
                 >
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
@@ -1121,53 +1466,102 @@
       </section>
       <!-- Fim Seção Outros -->
 
-      <!-- Grid Bebidas  -->
-      <section class="bebidas" id="bebidas">
-        <div class="mx-auto max-w-7xl px-2 my-2">
-          <h2 class="font-bold text-3xl mb-10 flex justify-center border-t-4 pt-10">Bebidas</h2>
+      <!-- Seção Bebidas  -->
+      <section class="bebidas scroll-mt-20" id="bebidas">
+        <div class="mx-auto max-w-7xl px-4 mt-16 mb-10 flex flex-col items-center">
+          <h2 class="font-bold text-3xl text-zinc-900 text-center">Bebidas</h2>
+          <div class="h-1.5 w-32 bg-red-600 rounded-full mt-3"></div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+          <!-- Produto Item -->
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/bebidas/garrafaDeVinho.png"
+                alt="Vinhos diversos"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Vinhos</p>
+                <p class="text-sm text-zinc-700 mt-1">De diversos tipos, a partir de R$ 40,00.</p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 40,00</p>
+                <!-- <button
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                  data-name="Molho de Pimenta Caseiro - 150ml"
+                  data-price="5"
+                >
+                  <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
+                </button> -->
+              </div>
+            </div>
+          </div>
+          <!-- Fim Produto Item -->
+
+          <!-- Produto Item -->
+          <div
+            class="flex bg-white rounded-xl shadow-sm border border-gray-100 p-3 gap-4 items-start hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+              <img
+                src="./assets/bebidas/garrafaDeCachaca.png"
+                alt="Cachaça"
+                class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+                <p class="font-bold text-zinc-800 leading-tight">Cachaça</p>
+                <p class="text-sm text-zinc-700 mt-1">De diversos tipos, a partir de R$ 20,00.</p>
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 20,00</p>
+                <!-- <button
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                  data-name="Molho de Pimenta Caseiro - 150ml"
+                  data-price="5"
+                >
+                  <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
+                </button> -->
+              </div>
+            </div>
+          </div>
+          <!-- Fim Produto Item -->
+
           <!-- Bebida Item -->
-          <div class="flex gap-2 w-full">
+          <!-- <div class="flex gap-2 w-full">
             <img
               src="./assets/bebidas/garrafaDeVinho.png"
               alt="Vinhos diversos"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
+              class="w-full h-full object-cover hover:scale-110 hover:-rotate-2 duration-300"
             />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Vinhos</p>
-              <p class="text-sm pt-2 mb-10">De diversos tipos, a partir de R$ 40,00.</p>
+            </div>
 
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 40,00</p>
+            <div class="flex flex-col justify-between min-h-[112px] w-full py-1">
+              <div>
+              <p class="font-bold text-zinc-800 leading-tight">Vinhos</p>
+              <p class="text-sm text-zinc-700 mt-1">De diversos tipos, a partir de R$ 40,00.</p>
+
+              </div>
+
+              <div class="flex items-center justify-between mt-3 w-full">
+                <p class="font-bold text-lg text-zinc-800">R$ 40,00</p>
                 <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Vinhos diversos" data-price="40">
                   <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
                 </button>
               </div>
             </div>
-          </div>
-          <!-- Fim Bebida Item -->
-
-          <!-- Bebida Item -->
-          <div class="flex gap-2 w-full">
-            <img
-              src="./assets/bebidas/garrafaDeCachaca.png"
-              alt="Cachaça"
-              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 mr-2"
-            />
-            <div class="w-full pr-4 relative">
-              <p class="font-bold">Cachaça</p>
-              <p class="text-sm pt-2 mb-10">De diversos tipos, a partir de R$ 20,00.</p>
-
-              <div class="flex items-center gap-2 justify-between w-full absolute bottom-0 mt-3">
-                <p class="font-bold text-lg">R$ 20,00</p>
-                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cachaça" data-price="20">
-                  <i class="fa fa-cart-plus text-lg text-[#f0f3fd]"></i>
-                </button>
-              </div>
-            </div>
-          </div>
+          </div> -->
           <!-- Fim Bebida Item -->
         </div>
       </section>
@@ -1176,7 +1570,7 @@
     <!-- Fim Menu -->
 
     <!-- Modal Cart -->
-    <div
+    <!-- <div
       class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden animate-fadeIn"
       id="cart-modal"
     >
@@ -1185,7 +1579,7 @@
 
         <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
 
-        <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+        <p class="font-bold text-zinc-800 leading-tight">Total: <span id="cart-total">0.00</span></p>
 
         <p class="font-bold mt-4">Nome:</p>
         <input type="text" placeholder="Informe seu nome..." id="name" class="w-full border-2 p-1 rounded my-1" />
@@ -1209,11 +1603,28 @@
           ou a retirada.
         </p>
       </div>
-    </div>
+    </div> -->
     <!-- Fim Modal Cart -->
 
+    <a
+      href="#home"
+      class="fixed bottom-24 right-6 z-40 bg-red-600 text-[#f0f3fd] rounded-full w-10 h-10 flex justify-center items-center text-2xl shadow-lg shadow-red-500/50 hover:scale-110 hover:bg-red-700 duration-300"
+      aria-label="Voltar ao topo"
+    >
+      <i class="bx bx-up-arrow-alt"></i>
+    </a>
+
+    <a
+      href="https://wa.me/5527998713286?text=Olá! Vi o catálogo e gostaria de saber mais."
+      target="_blank"
+      class="fixed bottom-6 right-4 z-50 bg-green-500 text-[#f0f3fd] rounded-full w-14 h-14 flex justify-center items-center text-4xl shadow-lg shadow-green-500/50 hover:scale-110 hover:bg-green-600 duration-300"
+      aria-label="Falar no WhatsApp"
+    >
+      <i class="bx bxl-whatsapp"></i>
+    </a>
+
     <!-- Button Card Footer -->
-    <footer class="w-full bg-red-600 py-3 fixed bottom-0 z-40 flex items-center justify-between">
+    <!-- <footer class="w-full bg-[#FF0000] py-3 fixed bottom-0 z-40 flex items-center justify-between">
       <div></div>
       <button
         class="flex items-center gap-2 text-[#f0f3fd] font-bold py-2 px-4 rounded-2xl bg-red-600 shadow shadow-red-950 hover:bg-red-700 hover:scale-105 duration-500"
@@ -1227,7 +1638,7 @@
       >
         <a href="#home"><i class="bx bx-up-arrow-alt text-xl"></i></a>
       </div>
-    </footer>
+    </footer> -->
     <!-- Fim Button Card Footer -->
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
